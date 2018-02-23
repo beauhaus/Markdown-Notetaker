@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #472b2b 0%, #443d3d 100%);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  height: 100vh;
+  color: #4f4f4f;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 8vw) 1fr;
+  grid-template-rows: 1fr repeat(10, 8vh) 1fr;
+  grid-gap: 10px;
+}
+
+.app-title {
+  grid-column: 5/8;
+  grid-row: 2;
+  font-weight: lighter;
+  margin: auto;
+  color: #747158;
+}
+
+.comps-container {
+  background: rgba(153, 153, 153, 0.4);
+  grid-column: 2/-2;
+  grid-row: 3/-2;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(10, auto);
+  box-shadow: 6px 6px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar {
+  grid-row: 1/-1;
+  grid-column: 1/5;
+  padding: 5%;
+}
+.title {
+    margin: 2vh auto 1vh 4vw;
+    font-weight: lighter;
+  color: #b4b4b4;
+    
+  }
+ 
+.edit {
+  background: linear-gradient(45deg, #b4b4b4 0%, #e4e4e4);
+  grid-row: 1/-1;
+  grid-column: 5/-1;
+}
+
+.btn {
+  border: 1px solid lemonchiffon;
+  padding: 2%;
+  color: #2b1111;
+  background: tan;
+  width: 100%;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
+}
