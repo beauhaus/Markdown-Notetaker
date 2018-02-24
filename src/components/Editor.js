@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import jsx- from 'inscrybmde';jsx-markdown
 import SimpleMDE from 'react-simplemde-editor';
 
 class Editor extends Component {
@@ -9,7 +8,7 @@ class Editor extends Component {
       <h2>Editor</h2>
       <SimpleMDE 
       onChange={this.props.change} 
-      value="hello"
+      value={this.props.currentNote.body}
       options={{
         autofocus: true
       }}
