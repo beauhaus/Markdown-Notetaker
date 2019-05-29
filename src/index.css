@@ -5,8 +5,16 @@
 }
 
 body {
-  background: linear-gradient(90deg, #472b2b 0%, #443d3d 100%);
-  width: 100vw;
+  background: repeating-linear-gradient(
+    45deg,
+    #565F51,
+    #565F51 10px,
+    #194A2F 10px,
+    #194A2F 20px,
+    #194A2F 20px,
+    #05290E 30px
+  );
+    width: 100vw;
   height: 100vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   height: 100vh;
@@ -25,11 +33,14 @@ body {
   grid-row: 2;
   font-weight: lighter;
   margin: auto;
-  color: #747158;
+  color: #c06e62;
+  text-shadow: 1px 1px 1px #aaaaaa;
+
 }
 
 .comps-container {
-  background: rgba(153, 153, 153, 0.4);
+  background: rgba(172, 107, 95, 0.9);
+  
   grid-column: 2/-2;
   grid-row: 3/-2;
   display: grid;
@@ -46,7 +57,7 @@ body {
 .title {
     margin: 2vh auto 1vh 4vw;
     font-weight: lighter;
-  color: #b4b4b4;
+  color: #efefef;
     
   }
  
@@ -63,4 +74,8 @@ body {
   background: tan;
   width: 100%;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.8);
+}
+
+.list li {
+  color: #bbb;
 }

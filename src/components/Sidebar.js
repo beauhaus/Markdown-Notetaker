@@ -16,7 +16,7 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <h1 className="title">Sidebar</h1>
+        <h1 className="title">Notes</h1>
         <button className="btn btn-clear" onClick={this.props.add}>+ new note</button>
         <dl className="list">
         {this.renderList()}
